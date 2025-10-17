@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Todo List - Abhinaya</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header Section -->
-    <header>
-        My To-Do List
-    </header>
+    <header>My To-Do List</header>
 
     <!-- Main Content Section -->
-     <main>
-        <div class="todo-container">
-            <div class="input-section">
-                <input type="text" id="todo-input" placeholder="Add a new task...">
-                <input type="date" name="" id="">
-                <button id="add-btn">Add</button>
-            </div>
-            <ul id="todo-list">
-                <!-- To-Do items will be dynamically added here -->
-            </ul>
-        </div>
+    <main>
+      <section class="todo-container">
+        <input type="text" id="todo-input" placeholder="Add a new task..." />
+        <input type="date" name="" id="" />
+        <button id="add-btn"></button>
+        <ul id="todo-list"></ul>
+      </section>
 
-        <script src="./assets/js/app.js"></script>
-     </main>
+      <!-- Filter and Delete Buttons Section -->
+      <section class="filterDelete-section">
+        <button id="filter-btn">Filter</button>
+        <button id="deleteAll-btn">Delete All</button>
+      </section>
 
-     <footer>
-        &copy; 2025 Abhinaya To-Do List App
-     </footer>
-    
-</body>
+      <section>
+        <ul id="todo-list">
+          <!-- To-Do items will be dynamically added here -->
+          <li>Making action button on Assignment</li>
+        </ul>
+      </section>
+
+      <script src="./assets/js/app.js"></script>
+    </main>
+
+    <footer>&copy; 2025 Abhinaya To-Do List App</footer>
+  </body>
 </html>
