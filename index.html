@@ -9,33 +9,37 @@
 
   <body>
     <!-- Header Section -->
-    <header>My To-Do List</header>
+    <header></header>
 
     <!-- Main Content Section -->
     <main>
-      <section class="todo-container">
-        <input type="text" id="todo-input" placeholder="Add a new task..." />
-        <input type="date" name="" id="" />
-        <button id="add-btn"></button>
-        <ul id="todo-list"></ul>
-      </section>
+      <div class="main-container">
+        <h1 class="todo-title">Todo List</h1>
+        
+        <section class="todo-container">
+          <input type="text" id="todo-input" placeholder="Add a new task..." />
+          <input type="date" id="todo-date" placeholder="Enter due date..." />
+          <input type="date" id="filter-date" placeholder="Filter by date..." />
+          <button id="add-btn" onclick="addTask()">add</button>
+          <ul id="todo-list"></ul>
+        </section>
 
-      <!-- Filter and Delete Buttons Section -->
-      <section class="filterDelete-section">
-        <button id="filter-btn">Filter</button>
-        <button id="deleteAll-btn">Delete All</button>
-      </section>
+        <!-- Filter and Delete Buttons Section -->
+        <section class="filterDelete-section">
+          <button id="filter-btn" onclick="filterTask()">Filter</button>
+          <button id="deleteAll-btn" onclick="deleteAllTask()">Delete All</button>
+        </section>
 
-      <section>
-        <ul id="todo-list">
-          <!-- To-Do items will be dynamically added here -->
-          <li>Making action button on Assignment</li>
-        </ul>
-      </section>
-
-      <script src="./assets/js/app.js"></script>
+        <section class="taskList-container">
+          <h2>Your Tasks</h2>
+          <ul id="task-list">
+            <!-- To-Do items will be dynamically added here -->
+          </ul>
+        </section>
+      </div>
+      <script src="./assets/js/script.js"></script>
     </main>
 
-    <footer>&copy; 2025 Abhinaya To-Do List App</footer>
+    <footer class="footer">&copy; 2025 Abhinaya To-Do List App</footer>
   </body>
 </html>

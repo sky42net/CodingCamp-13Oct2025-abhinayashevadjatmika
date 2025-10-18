@@ -1,11 +1,25 @@
 body {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   justify-items: center;
   align-content: center;
-  background-color: #f0f0f0;
+  background-color: #8C00FF;
 }
 
-.todo-container {
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.main-container{
+  background-color: #FF3F7F;
+}
+
+.todo-title{
+  text-align: center;
 }
 
 .filterDelete-section {
@@ -13,3 +27,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+.footer{
+  display: flex;
+  justify-content: center;
+}
+
